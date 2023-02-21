@@ -1,19 +1,10 @@
 package main
 
-type Kline struct {
-	OpenTime                 float64
-	Open                     string
-	High                     string
-	Low                      string
-	Close                    string
-	Volume                   string
-	CloseTime                float64
-	QuoteAssetVolume         string
-	NumberOfTrades           float64
-	TakerBuyBaseAssetVolume  string
-	TakerBuyQuoteAssetVolume string
+func init() {
+	CoinPrices = make(map[string]string)
+	CoinPrices["BTC"] = "0"
 }
 
 func main() {
-
+	server()
 }
