@@ -18,4 +18,10 @@ type Request struct {
 	ticker string
 }
 
+type Message struct {
+	price string
+}
+
 var CoinPrices map[string]string
+
+var NodeAddress = "http://localhost:3000"
